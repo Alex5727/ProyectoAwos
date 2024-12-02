@@ -3,6 +3,7 @@ using ProyectoAwosCarrilloShop.Data.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static ProyectoAwosCarrilloShop.Exeptions.ProductoStockExeption;
 
 namespace ProyectoAwosCarrilloShop.Data.Services
 {
@@ -71,13 +72,20 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             }
         }
 
-        public void BajarStock(int proid)
+        public void BajarStock(int proid, int canp)
         {
             var producto = _context.Productos.FirstOrDefault(c => c.ID == proid);
             if (producto != null)
             {
-                producto.Stock = producto.Stock-1;
-                _context.SaveChanges();
+                if (producto.Stock >= canp)
+                {
+                    producto.Stock = producto.Stock - canp;
+                    _context.SaveChanges();
+                }
+                else
+                {
+                    throw new StockInsuficienteException("No hay suficiente stock para el producto.");
+                }
             }
         }
 

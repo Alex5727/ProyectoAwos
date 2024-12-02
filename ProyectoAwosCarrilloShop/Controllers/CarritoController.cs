@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProyectoAwosCarrilloShop.Data.Services;
 using ProyectoAwosCarrilloShop.Data.ViewModels;
+using static ProyectoAwosCarrilloShop.Exeptions.ProductoStockExeption;
 
 namespace ProyectoAwosCarrilloShop.Controllers
 {
@@ -43,8 +44,17 @@ namespace ProyectoAwosCarrilloShop.Controllers
         [HttpPost("comprar-carrito/{carritoId}")]
         public IActionResult ComprarCarrito(int carritoId)
         {
-            _carritoservice.CarritoComprar(carritoId);
-            return Ok(new { message = "El carrito ha sido comprado exitosamente y su estado ha sido actualizado." });
+            try
+            {
+                _carritoservice.CarritoComprar(carritoId);
+                return Ok(new { message = "El carrito ha sido comprado exitosamente y su estado ha sido actualizado." });
+            }
+            catch (StockInsuficienteException ex)
+            {
+                return BadRequest(new { Message = ex.Message
+    });
+            }
         }
+
     }
 }

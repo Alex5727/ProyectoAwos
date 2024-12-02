@@ -2,6 +2,7 @@
 using ProyectoAwosCarrilloShop.Data.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ProyectoAwosCarrilloShop.Data.Services
 {
@@ -21,11 +22,25 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             var _carrito = new Carrito()
             {
                 CliID = carrito.ClienteID,
-                estado = true,
+                estado = false,
             };
             _context.Carritos.Add(_carrito);
             _context.SaveChanges();
         }
+
+        public Carrito UpdateEstado(int carritoID)
+        {
+            var _Carrito = _context.Carritos.FirstOrDefault(n => n.CarritoID == carritoID);
+            if (_Carrito != null)
+            {
+                _Carrito.estado = true;
+
+                _context.SaveChanges();
+            }
+            return _Carrito;
+        }
+
+
 
         public List<Carrito> GetAllCarritos() => _context.Carritos.ToList();
 

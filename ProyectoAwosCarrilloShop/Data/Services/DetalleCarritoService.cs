@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using static ProyectoAwosCarrilloShop.Exeptions.ProductoStockExeption;
+using System.Net;
 
 namespace ProyectoAwosCarrilloShop.Data.Services
 {
@@ -14,10 +15,12 @@ namespace ProyectoAwosCarrilloShop.Data.Services
     {
         private AppDBcontext _context;
         private readonly ProductoService _productoService;
+
         public DetalleCarritoService(AppDBcontext context, ProductoService productoService)
         {
             _context = context;
             _productoService = productoService;
+
         }
 
         public void AddDetCar2(DetalleCarritoVM detallescarrito)
@@ -38,21 +41,66 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             int stokcProducto = _productoService.GetProductStockByID(detallescarrito.ID);
             int precioProducto = _productoService.GetProductPriceByID(detallescarrito.ID);
 
-            if (stokcProducto <= 0)
+
+
+            bool existe = BuscarCarProductoByID(detallescarrito.CarritoID, detallescarrito.ID);
+
+            if (existe)
             {
-                throw new StockInsuficienteException("No hay suficiente stock para el producto.");
-            }
-
-
-            var _detCar = new DetalleCarrito()
+                var _detCar = new DetalleCarrito()
                 {
                     CarritoID = detallescarrito.CarritoID,
                     ID = detallescarrito.ID,
                     Cantidad = detallescarrito.Cantidad,
                     Subtotal = (precioProducto * detallescarrito.Cantidad),
                 };
+
+                if (stokcProducto < detallescarrito.Cantidad)
+                {
+                    throw new StockInsuficienteException("No hay suficiente stock para el producto.");
+                }
+
+                var _Carrito = _context.Carritos.FirstOrDefault(n => n.CarritoID == detallescarrito.CarritoID);
+                if (_Carrito != null)
+                {
+                    _Carrito.estado = true;
+
+                    _context.SaveChanges();
+                }
+
+
                 _context.DetallesCarrito.Add(_detCar);
                 _context.SaveChanges();
+            }
+            else
+            {
+                var _detCar = _context.DetallesCarrito.FirstOrDefault(dc => dc.CarritoID == detallescarrito.CarritoID && dc.ID == detallescarrito.ID);
+
+                if (stokcProducto >= detallescarrito.Cantidad + _detCar.Cantidad)
+                {
+                    _detCar.Cantidad = _detCar.Cantidad + detallescarrito.Cantidad;
+                }
+                else
+                {
+                    throw new StockInsuficienteException("No hay suficiente stock para el producto.");
+                }
+                _context.SaveChanges();
+
+            }
+        }
+
+        public bool BuscarCarProductoByID(int Caritoid, int productoid)
+        {
+           var detcar = _context.DetallesCarrito.FirstOrDefault(dc => dc.CarritoID == Caritoid && dc.ID == productoid);
+
+            if(detcar != null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public List<DetalleCarrito> GetAllDetCarr() => _context.DetallesCarrito.ToList();
@@ -73,20 +121,15 @@ namespace ProyectoAwosCarrilloShop.Data.Services
 
         public void ComprarCarrito(int carritoId)
         {
-            // Materializar la lista de DetallesCarrito
             var detallesCarrito = _context.DetallesCarrito
                 .Where(dc => dc.CarritoID == carritoId)
                 .ToList();
-
             foreach (var detalle in detallesCarrito)
             {
-                // Bajar stock del producto asociado
-                _productoService.BajarStock(detalle.ID);
+                _productoService.BajarStock(detalle.ID, detalle.Cantidad);
 
-                // Eliminar el detalle del carrito
                 _context.DetallesCarrito.Remove(detalle);
             }
-
             _context.SaveChanges();
         }
 
