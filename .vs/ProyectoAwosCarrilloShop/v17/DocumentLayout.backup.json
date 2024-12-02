@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\data\\services\\carritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\data\\services\\carritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\controllers\\detallecarritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\controllers\\detallecarritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\data\\services\\detallecarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\data\\services\\detallecarritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\data\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\data\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\data\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\data\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|c:\\users\\pc\\source\\repos\\proyectoawoscarrilloshop\\proyectoawoscarrilloshop\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47DBD1FC-F2BA-4973-89B6-B1DDE007CCEC}|ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj|solutionrelative:proyectoawoscarrilloshop\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoService.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\CarritoService.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Data\\Services\\CarritoService.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\CarritoService.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Data\\Services\\CarritoService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:19:17.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Controllers\\CarritoController.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Controllers\\CarritoController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T01:00:48.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DetalleCarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\DetalleCarritoController.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Controllers\\DetalleCarritoController.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\DetalleCarritoController.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Controllers\\DetalleCarritoController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:13:14.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Controllers\\ProductoController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:21:26.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Models\\Carrito.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Data\\Models\\Carrito.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Models\\Carrito.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Data\\Models\\Carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T00:19:06.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetalleCarritoService.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\DetalleCarritoService.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Data\\Services\\DetalleCarritoService.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\DetalleCarritoService.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Data\\Services\\DetalleCarritoService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T23:44:27.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\ProductoService.cs",
+              "RelativeDocumentMoniker": "ProyectoAwosCarrilloShop\\Data\\Services\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop\\Data\\Services\\ProductoService.cs",
+              "RelativeToolTip": "ProyectoAwosCarrilloShop\\Data\\Services\\ProductoService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T00:52:32Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
