@@ -47,6 +47,14 @@ namespace ProyectoAwosCarrilloShop.Controllers
             return Ok(producto);
         }
 
+        [HttpPut("update-producto.by-id/{id}")]
+        public IActionResult UpdateProductoById(int ID, [FromBody] ProductoVM producto)
+        {
+            var updateProducto = _productoService.UpdateProductByID(ID, producto);
+            return Ok(updateProducto);
+        }
+
+
         [HttpDelete("delete-producto-by-id/{id}")]
         public IActionResult DeleteProductoByID(int id)
         {

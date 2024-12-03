@@ -89,6 +89,20 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             }
         }
 
+        public Producto UpdateProductByID(int proid, ProductoVM producto)
+        {
+            var _producto = _context.Productos.FirstOrDefault(c => c.ID == proid);
+            if (_producto != null)
+            {
+                _producto.Nombre = producto.Nombre;
+                _producto.Descripccion = producto.Descripccion;
+                _producto.Precio = producto.Precio;
+                _producto.Stock = producto.Stock;
+                
+                _context.SaveChanges();
+            }
+            return _producto;
+        }
 
     }
 }

@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using static ProyectoAwosCarrilloShop.Exeptions.ProductoStockExeption;
 using System.Net;
+using static ProyectoAwosCarrilloShop.Exeptions.CarritoVacioExeption;
+using ProyectoAwosCarrilloShop.Exeptions;
 
 namespace ProyectoAwosCarrilloShop.Data.Services
 {
@@ -124,6 +126,13 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             var detallesCarrito = _context.DetallesCarrito
                 .Where(dc => dc.CarritoID == carritoId)
                 .ToList();
+
+            if (detallesCarrito.Capacity == 0)
+            {
+                throw new CarritoVacioExeption("No hay productos en este carrito.");
+            }
+            else
+            {
             foreach (var detalle in detallesCarrito)
             {
                 _productoService.BajarStock(detalle.ID, detalle.Cantidad);
@@ -131,6 +140,7 @@ namespace ProyectoAwosCarrilloShop.Data.Services
                 _context.DetallesCarrito.Remove(detalle);
             }
             _context.SaveChanges();
+            }
         }
 
 

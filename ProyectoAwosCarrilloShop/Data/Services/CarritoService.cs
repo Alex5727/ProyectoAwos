@@ -1,7 +1,9 @@
 ﻿using ProyectoAwosCarrilloShop.Data.Models;
 using ProyectoAwosCarrilloShop.Data.ViewModels;
+using ProyectoAwosCarrilloShop.Exeptions;
 using System.Collections.Generic;
 using System.Linq;
+using static ProyectoAwosCarrilloShop.Exeptions.CarritoVacioExeption;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace ProyectoAwosCarrilloShop.Data.Services
@@ -54,15 +56,34 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             }
         }
 
+        public CarritoVM GetCarritoByID(int carID)
+        {
+            var _carrito = _context.Carritos.Where(n => n.CarritoID == carID).Select(carrito => new CarritoVM()
+            {
+                ClienteID = carrito.CliID,
+            }).FirstOrDefault();
+            return _carrito;
+        }
+
         public void CarritoComprar(int carid)
         {
-            _detcaroService.ComprarCarrito(carid);
 
-            var carrito = _context.Carritos.FirstOrDefault(c => c.CarritoID == carid);
-            if (carrito != null)
+            var carr = GetCarritoByID(carid);
+
+            if (carr != null)
             {
-                carrito.estado = false;
-                _context.SaveChanges();
+                var carrito = _context.Carritos.FirstOrDefault(c => c.CarritoID == carid);
+                if (carrito != null)
+                {
+                    carrito.estado = false;
+                    _context.SaveChanges();
+                }
+
+                _detcaroService.ComprarCarrito(carid);
+            }
+            else
+            {
+                throw new CarritoVacioExeption("No existe el carrito seleccionado.");
             }
         }
 

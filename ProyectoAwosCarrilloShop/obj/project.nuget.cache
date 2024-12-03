@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bPsvqf7/1gYt3SdE8Db05Sw1dVIkyywme9sqKEFywrYwDHs8KoOFN7TGlI/E52XZ8W9JCsQoU6MqUR/DlIICIw==",
+  "dgSpecHash": "23BGoadSrndE3bkfyhVpK5nXKaeH9gQd5YKET6vi9JFYZa9xoDHoYq5f2JRN/RQbcQ3QBLj59H4UyvdvrmiR1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cisco01\\Source\\Repos\\ProyectoAwos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj",
+  "projectFilePath": "C:\\Users\\cisco01\\source\\repos\\ProyectoAwos\\ProyectoAwosCarrilloShop\\ProyectoAwosCarrilloShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cisco01\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\cisco01\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
