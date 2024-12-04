@@ -65,6 +65,9 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             return _carrito;
         }
 
+        public Carrito GetCarrito(int carritoID) => _context.Carritos.FirstOrDefault(n => n.CarritoID == carritoID);
+
+
         public void CarritoComprar(int carid)
         {
 

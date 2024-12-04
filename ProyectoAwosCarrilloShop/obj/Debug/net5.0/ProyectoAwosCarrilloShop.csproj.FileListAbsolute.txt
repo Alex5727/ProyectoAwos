@@ -122,5 +122,9 @@ C:\Users\cisco01\Source\Repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\ne
 C:\Users\cisco01\Source\Repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\ProyectoAwosCarrilloShop.pdb
 C:\Users\cisco01\Source\Repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\ProyectoAwosCarrilloShop.genruntimeconfig.cache
 C:\Users\cisco01\Source\Repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\ref\ProyectoAwosCarrilloShop.dll
-C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\bin\Debug\net5.0\ref\ProyectoAwosCarrilloShop.dll
-C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\ProyectoAwosCarrilloShop.StaticWebAssets.xml
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\ProyectoAwosCarrilloShop.StaticWebAssets.Pack.cache
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\msbuild.ProyectoAwosCarrilloShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\msbuild.build.ProyectoAwosCarrilloShop.props
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoAwosCarrilloShop.props
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.ProyectoAwosCarrilloShop.props
+C:\Users\cisco01\source\repos\ProyectoAwos\ProyectoAwosCarrilloShop\obj\Debug\net5.0\refint\ProyectoAwosCarrilloShop.dll

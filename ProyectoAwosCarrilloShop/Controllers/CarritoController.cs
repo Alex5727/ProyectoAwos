@@ -42,6 +42,14 @@ namespace ProyectoAwosCarrilloShop.Controllers
         }
 
 
+        [HttpGet("get-carrito-by-id/{id}")]
+        public IActionResult GetCarrito(int id)
+        {
+            var carrito = _carritoservice.GetCarrito(id);
+            return Ok(carrito);
+        }
+
+
         [HttpPost("comprar-carrito/{carritoId}")]
         public IActionResult ComprarCarrito(int carritoId)
         {

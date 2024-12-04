@@ -121,6 +121,7 @@ namespace ProyectoAwosCarrilloShop.Data.Services
             }
         }
 
+
         public void ComprarCarrito(int carritoId)
         {
             var detallesCarrito = _context.DetallesCarrito

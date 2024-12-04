@@ -47,13 +47,13 @@ namespace ProyectoAwosCarrilloShop.Controllers
             return Ok(producto);
         }
 
+
         [HttpPut("update-producto.by-id/{id}")]
-        public IActionResult UpdateProductoById(int ID, [FromBody] ProductoVM producto)
+        public IActionResult UpdateProductoById(int id, ProductoVM producto)
         {
-            var updateProducto = _productoService.UpdateProductByID(ID, producto);
+            var updateProducto = _productoService.UpdateProductByID(id, producto);
             return Ok(updateProducto);
         }
-
 
         [HttpDelete("delete-producto-by-id/{id}")]
         public IActionResult DeleteProductoByID(int id)
