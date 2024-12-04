@@ -49,6 +49,25 @@ namespace ProyectoAwosCarrilloShop.Controllers
             return Ok(detcar);
         }
 
+        [HttpPut("update-detalle-carrito/{carritoID}/{productoID}")]
+        public IActionResult UpdateDetalleCarrito(int carritoID, int productoID, [FromBody] int nuevaCantidad)
+        {
+            try
+            {
+                _detalleCarritoService.UpdateDetCar(carritoID, productoID, nuevaCantidad);
+                return Ok("Cantidad actualizada correctamente.");
+            }
+            catch (StockInsuficienteException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+
         [HttpDelete("delete-detallecarrito/{carritoId}/{productoId}")]
         public IActionResult DeleteDetalleCarrito(int carritoId, int productoId)
         {

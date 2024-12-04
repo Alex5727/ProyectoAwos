@@ -110,6 +110,35 @@ namespace ProyectoAwosCarrilloShop.Data.Services
         public List<DetalleCarrito> GetDetCarByCarID(int CarID) => _context.DetallesCarrito.Where(n => n.CarritoID == CarID).ToList();
 
 
+        public void UpdateDetCar(int carritoID, int productoID, int nuevaCantidad)
+        {
+            int stockProducto = _productoService.GetProductStockByID(productoID);
+            int precioProducto = _productoService.GetProductPriceByID(productoID);
+
+            var detCarrito = _context.DetallesCarrito.FirstOrDefault(dc => dc.CarritoID == carritoID && dc.ID == productoID);
+
+            if (detCarrito == null)
+            {
+                throw new Exception("El producto no existe en el carrito.");
+            }
+
+            if (nuevaCantidad > stockProducto)
+            {
+                throw new StockInsuficienteException("No hay suficiente stock para el producto.");
+            }
+
+            detCarrito.Cantidad = nuevaCantidad;
+
+            detCarrito.Subtotal = precioProducto * nuevaCantidad;
+
+            var carrito = _context.Carritos.FirstOrDefault(c => c.CarritoID == carritoID);
+            if (carrito != null)
+            {
+                carrito.estado = true; 
+            }
+            _context.SaveChanges();
+        }
+
         public void DeleteDetalleCarrito(int carritoId, int productoId)
         {
             var detalleCarrito = _context.DetallesCarrito.FirstOrDefault(dc => dc.CarritoID == carritoId && dc.ID == productoId);
